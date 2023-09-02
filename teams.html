@@ -1,100 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        html {
-            background-image: url('darkgradient.png'); /* Replace with your image path */
-            background-size:auto; /* Adjust this property as needed */
-            height: 20vh;
-        }
-    </style>
-    <title>Teams</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="teams.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html {
+      background: linear-gradient(to bottom, #040D12, #14141F);
+      background-size: cover;
+      height: 200vh;
+    }
+  </style>
+  <title>Teams</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="teams.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+</head>
 
-  </head>
-
-  <body>
-    <section id="tranding">
-      <div class="container">
-        <!-- <h3 class="text-center section-subheading">- popular Delivery -</h3> -->
-        <h1 class="text-center section-heading">-WEB DEV CORES-</h1>
-      </div>
-      <div class="container">
-        <div class="swiper tranding-slider">
-          <div class="swiper-wrapper">
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-img">
-                    <img src="card.png" alt="Tranding">
-                </div>
-                <div class="centered-content">
-                    <img src="profile.png" alt="profile">
-                    <h2 class="food-name">Akanksha Jha</h2>
-                    <p class="subtitle">IT,3rd Year</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-img">
-                    <img src="card.png" alt="Tranding">
-                </div>
-                <div class="centered-content">
-                    <img src="profile.png" alt="profile">
-                    <h2 class="food-name">Kirti Aggarwal</h2>
-                    <p class="subtitle">CSE,3rd Year</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-img">
-                    <img src="card.png" alt="Tranding">
-                </div>
-                <div class="centered-content">
-                    <img src="profile.png" alt="profile">
-                    <h2 class="food-name">Your Name</h2>
-                    <p class="subtitle">Subtitle 1</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
+<body>
+  <section id="tranding">
+    <div class="container">
+      <h1>-WebD Cores-</h1>
+      <div class="card hide-holo">
+        <div class="card-container">
+          <div class="holo"></div>
+          <div class="cardbg">
+            <img src="profile.png" alt="prof" class="profile">
+            <img src="card.png" alt="Image">
+            <h3>Akanksha Jha</h3>
+            <p class="subheading">IT, 3rd Year</p>
           </div>
-
-          <div class="tranding-slider-control">
-            <div class="swiper-button-prev slider-arrow">
-              <ion-icon name="arrow-back-outline"></ion-icon>
-            </div>
-            <div class="swiper-button-next slider-arrow">
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-
         </div>
       </div>
-    </section>
+      <div class="card hide-holo">
+        <div class="card-container">
+          <div class="holo"></div>
+          <div class="cardbg">
+            <img src="profile.png" alt="prof" class="profile">
+            <img src="card.png" alt="Image">
+            <h3>Kirti Aggarwal</h3>
+            <p class="subheading">CSE, 3rd Year</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="teams.js"></script>
-  </body>
+  <script type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="teams.js"></script>
+</body>
 
 </html>
