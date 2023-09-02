@@ -10,7 +10,7 @@
 }
 
 :root {
-  --primary: #ffffff;
+  --primary:#ffffff;
   --white: #ffffff;
   --bg: #00000000;
 }
@@ -22,234 +22,210 @@ html {
 }
 h1{
     font-family: 'Aladin', cursive;
-}
-@media (min-width: 1440px) {
-  html {
-    zoom: 1.5;
-  }
+    font-size: 7rem;
+    color: #b9ecff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-@media (min-width: 2560px) {
-  html {
-    zoom: 1.7;
-  }
+h3{
+  margin-top:-50%;
+  font-family: 'Aladin', cursive;
+  font-size: 5rem;
 }
-
-@media (min-width: 3860px) {
-  html {
-    zoom: 2.5;
-  }
-}
-
-::-webkit-scrollbar {
-  width: 1.3rem;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 1rem;
-  background: #797979;
-  transition: all 0.5s ease-in-out;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #222224;
-}
-
-::-webkit-scrollbar-track {
-  background: #f9f9f9;
-}
-
-body {
-  font-size: 1.6rem;
-  background: var(--bg);
-}
-
 .container {
-  max-width: 124rem;
-  padding: 0 1rem;
-  margin: 0 auto;
-}
-
-.text-center {
+  /* background-image: url('darkgradient.png');
+  background-size:cover; /* Adjust this property as needed
+  height: 20vh; */
+  width: 100%;
+  margin-top: 3vh;
   text-align: center;
+  position: relative; /* Required for absolute positioning of child elements */
+  overflow: hidden;
+ 
+  
+}
+.holo {
+  position: absolute;
+  z-index: -1;
+  width: 200px;
+  height: 50px;
+  background-color: rgba(0, 252, 252, 0.35);
+  border-radius: 5%;
+  filter: blur(10px);
+  transform: perspective(100px) rotateX(-35deg);
+  transform-style: preserve-3d;
+  animation: holographic 1.5s infinite;
+  backface-visibility: hidden;
+  margin-top: 450px;
+  margin-left: 35px;
+  overflow: hidden;
 }
 
-.section-heading {
-  font-size: 3rem;
-  color: var(--primary);
-  padding: 1rem 0;
-}
-
-#tranding {
-  padding: 4rem 0;
-}
-
-@media (max-width:1440px) {
-  #tranding {
-    padding: 7rem 0;
-  }
-}
-
-#tranding .tranding-slider {
-  height: 52rem;
-  padding: 2rem 0;
+.holo:after {
   position: relative;
+  z-index: -2;
+  left: -10px;
+  right: -10px;
+  content: "";
+  height: 200px;
+  background-color: rgba(0, 252, 252, 0);
+  border-radius: 5%;
+  filter: blur(2.5px);
+  backface-visibility: hidden;
+  overflow: hidden;
 }
 
-@media (max-width:500px) {
-  #tranding .tranding-slider {
-    height: 45rem;
+.holo + .holo {
+  animation-duration: 0.75s;
+  opacity: 0.5;
+}
+
+@keyframes float {
+  from {
+    will-change: unset;
+    transform: translateY(-10px);
+  }
+  to {
+    will-change: transform;
+    transform: translateY(-30px);
   }
 }
 
-.tranding-slide {
-  width: 37rem;
-  height: 42rem;
-  position: relative;
-}
-
-@media (max-width:500px) {
-  .tranding-slide {
-    width: 28rem !important;
-    height: 36rem !important;
+@keyframes holographic {
+  from {
+    will-change: box-shadow;
+    box-shadow:
+      0 -75px 5px rgba(0, 252, 252, 0.15),
+      0 -1px 2px rgba(0, 252, 252, 0.5),
+      0 -45px 5px rgba(0, 252, 252, 0.15),
+      0 -2px 3px rgba(0, 252, 252, 0.5),
+      0 -3px 4px rgba(0, 252, 252, 0.5),
+      0 -4px 6px rgba(0, 252, 252, 0.5),
+      0 -5px 10px rgba(0, 252, 252, 0.75),
+      0 -7px 20px rgba(0, 252, 252, 0.75),
+      0 -10px 30px rgba(0, 252, 252, 0.75),
+      0 -15px 40px rgba(0, 252, 252, 0.75),
+      0 -25px 50px rgba(0, 252, 252, 0.75),
+      0 -35px 60px rgba(0, 252, 252, 0.85),
+      0 -45px 70px rgba(0, 252, 252, 0.95),
+      0 -65px 80px rgba(0, 252, 252, 1),
+      0 -75px 90px rgba(0, 252, 252, 1);
   }
-  .tranding-slide .tranding-slide-img img {
-    width: 28rem !important;
-    height: 36rem !important;
+  to {
+    will-change: unset;
+    box-shadow:
+      0 -1px 5px rgba(0, 252, 252, 0.15),
+      0 -1px 2px rgba(0, 252, 252, 0.5),
+      0 -1px 5px rgba(0, 252, 252, 0.15),
+      0 -2px 3px rgba(0, 252, 252, 0.5),
+      0 -3px 4px rgba(0, 252, 252, 0.5),
+      0 -4px 6px rgba(0, 252, 252, 0.5),
+      0 -5px 7px rgba(0, 252, 252, 0.75),
+      0 -7px 10px rgba(0, 252, 252, 0.75),
+      0 -10px 15px rgba(0, 252, 252, 0.75),
+      0 -15px 20px rgba(0, 252, 252, 0.75),
+      0 -25px 25px rgba(0, 252, 252, 0.75),
+      0 -35px 30px rgba(0, 252, 252, 0.85),
+      0 -45px 35px rgba(0, 252, 252, 0.95),
+      0 -65px 40px rgba(0, 252, 252, 1),
+      0 -75px 50px rgba(0, 252, 252, 1);
   }
 }
 
-.tranding-slide .tranding-slide-img img {
-  width: 35rem;
-  height: 30rem;
-  border-radius: 2rem;
-  object-fit:contain;
+.card{
+  width: 400px;
+  /* background-image: url('card.png'); */
+  text-align: center;
+  display: inline-block;
+  margin-top: 100px;
+  height:500px;
+  margin: 20px;
+  margin-top:40px;
+  position: relative; /* Required for absolute positioning of child elements */
+  
 }
 
-.tranding-slide .tranding-slide-content {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-}
 
-.tranding-slide-content .food-price {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  color: var(--white);
+.cardbg{
+    position: relative;
+    width: 100%; /* Make the image take up the full width of the container */
+    height: 100%; /* Make the image take up the full height of the container */
+    object-fit: cover; /* Preserve aspect ratio and cover the entire container */
+    position: absolute; /* Position the image relative to its container */
+    top: 10px; /* Position the image at the top of the container */
+    right: 10%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 3;
+    /* margin-bottom: 40px; */
+    /* transition: opacity 0.2s ease-in-out; */
+    /* box-shadow: 0 0 8px #fff; */
 }
-
-.tranding-slide-content .tranding-slide-content-bottom {
-  position: absolute;
-  bottom: 2rem;
-  left: 2rem;
-  color: var(--white);
-}
-
-.food-rating {
-  padding-top: 1rem;
-  display: flex;
-  gap: 1rem;
-}
-
-.rating ion-icon {
-  color: var(--primary);
-}
-
-.swiper-slide-shadow-left,
-.swiper-slide-shadow-right {
+/* Remove the holo animation from the .cardbg element */
+.cardbg .holo {
   display: none;
 }
 
-.tranding-slider-control {
-  position: relative;
-  bottom: 15rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Apply the holo animation only when hovering over the entire card */
+.card:hover .holo {
+  display: block;
 }
 
-.tranding-slider-control .swiper-button-next {
-  left: 56% !important;
-  transform: translateX(-58%) !important;
-}
 
-@media (max-width:990px) {
-  .tranding-slider-control .swiper-button-next {
-    left: 70% !important;
-    transform: translateX(-70%) !important;
-  }
-}
+.profile{
 
-@media (max-width:450px) {
-  .tranding-slider-control .swiper-button-next {
-    left: 80% !important;
-    transform: translateX(-80%) !important;
-  }
-}
-
-@media (max-width:990px) {
-  .tranding-slider-control .swiper-button-prev {
-    left: 30% !important;
-    transform: translateX(-30%) !important;
-  }
-}
-
-@media (max-width:450px) {
-  .tranding-slider-control .swiper-button-prev {
-    left: 20% !important;
-    transform: translateX(-20%) !important;
-  }
-}
-
-.tranding-slider-control .slider-arrow {
-  background: rgb(137, 138, 138);
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: 50%;
-  left: 42%;
-  transform: translateX(-42%);
-  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
-}
-
-.tranding-slider-control .slider-arrow ion-icon {
-  font-size: 2rem;
-  color: #222224;
-}
-
-.tranding-slider-control .slider-arrow::after {
-  content: '';
-}
-
-.tranding-slider-control .swiper-pagination {
-  position: relative;
-  width: 15rem;
-  bottom: 1rem;
-}
-
-.tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
-  background:  rgb(148, 174, 240);
-}
-
-.tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
-  background: rgb(148, 174, 240);
-}
-.centered-content {
   position: absolute;
-  top: 35%;
-  left: 47%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 35%;
+  right: 80%;
+  width:33%;
+  margin-top:30%;
+  height:25%;
+  z-index: 2;
+  object-fit: cover;
+  margin-bottom: 40px;
   text-align: center;
 }
-.tranding-slide-img {
-  position: relative;
-  display: inline-block;
-  max-width: 100%;
-  height: auto;
+/* .profile:hover{
+  box-shadow: 0 0 10px 5px rgba(0, 0, 255, 0.5); Apply the blue glow effect to the image on hover 
+} */
+
+.card h1{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  
 }
-h2{
-  font-family: 'Aladin', cursive;
-  font-size: 3rem;
+.card span{
+  margin: 20px 0px;
+  display: inline-block;
+  color: #999;
+  margin-top: 10px
+}
+.card p{
+  margin-bottom: 20px;
+  font-size: 20px
+}
+.card a{
+  font-size: 20px
+}
+
+.card a i:hover{
+  color: #aaaaaa;
+  
+}
+.card button{
+  display: inline-block;
+  width: 87%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-size: 19px;
+  margin-bottom: 17px;
+  margin-top: 20px;
+  cursor: pointer;
+
+}
+.card button:hover{
+  background-color: #25a6b1
 }
