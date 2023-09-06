@@ -321,6 +321,14 @@ p{
    font-size: 30px; /* Adjust the icon size as needed */
  }
  
+<<<<<<< HEAD
+=======
+#my-link {
+  color: #ff0000; /* Initial color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth transition effect */
+}
+>>>>>>> b2243b5142f2902629a2f4b484c25ddf8d34eb5c
 #mylink:hover{
   color: #9a9797;
 }
