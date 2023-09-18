@@ -327,11 +327,12 @@ p{
 #mylink:hover{
   color: #9a9797;
 }
-/*#myImage1 {
-  width: 20%; /* Initial width */
-  height: 25%; /* Maintain aspect ratio */
-  transition: width height 0.3s; /* Add a smooth transition effect 
-
+#myImage1 {
+  width: 40%; 
+  height: 30%; 
+  left: 30%;
+  transition: width height 0.3s; 
+}
 /* Default styles for the image */
 .profile{
   width: 100%; /* Set the width to 100% of its container */
@@ -339,30 +340,56 @@ p{
 }
 
 /* Media query for screens with a maximum width of 768 pixels */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .profile {
     width: 80%; /* Reduce the width for smaller screens */
-    height: auto; /* Automatically adjust the height */
-    margin-left: -100px;
-    position: absolute;
-  }
-}
+    /* height: auto; /* Automatically adjust the height */
+    /* margin-left: -100px; */
+    /* position: absolute; */ 
+  /* }
+} */ 
 
 /* Media query for screens with a maximum width of 480 pixels */
 @media (max-width: 480px) {
   .profile {
-    width: 60%; /* Further reduce the width for even smaller screens */
+    width: 100%; /* Further reduce the width for even smaller screens */
     height: auto; /* Automatically adjust the height */
-  position: absolute;
+    position: absolute;
     margin-left: -50px;
     margin-bottom: -100px;
     top: 20%;
   }
 }
 @media (min-width: 769px) {
-  img {
-    width: 100%; /* Set the width to 100% for screens larger than 768px */
+  #myImage1 {
+    width: 40%; /* Set the width to 100% for screens larger than 768px */
     height: auto; /* Automatically adjust the height */
+  }
+}
+@media (max-width: 769px) {
+  #myImage1 {
+    width: 40%; /* Set the width to 100% for screens larger than 768px */
+    height: auto; /* Automatically adjust the height */
+  }
+}
+@media (min-width: 769px) {
+  .profile {
+    width: 60%; /* Further reduce the width for even smaller screens */
+    height: auto; /* Automatically adjust the height */
+    position: absolute;
+    margin-left: -1%;
+    margin-top: 3%;
+    top: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .profile {
+    width: 60%; /* Further reduce the width for even smaller screens */
+    height: auto; /* Automatically adjust the height */
+    position: absolute;
+    margin-left: -1px;
+    margin-top: 20px;
+    top: 20%;
   }
 }
 
@@ -371,11 +398,6 @@ p{
   height: 25%; /* Maintain aspect ratio */
   transition: width height 0.3s; /* Add a smooth transition effect */
 }
-
-
-
-
-
 
 .popup-overlay {
   display: flex;
@@ -388,7 +410,7 @@ p{
   height: 200vh;
   background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
   z-index: 9999; /* Ensure it's on top of other elements */
-  margin-top: -150px;
+  margin-top: -300px;
 }
 
 /* Styles for the pop-up image */
@@ -396,4 +418,7 @@ p{
   max-width: 100%; /* Adjust the maximum width as needed */
   max-height: 80%; /* Adjust the maximum height as needed */
   
+}
+.popup-overlay{
+  display: none;
 }
