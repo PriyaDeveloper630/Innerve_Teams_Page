@@ -49,6 +49,8 @@ p{
   background-size:cover; /* Adjust this property as needed
   height: 20vh; */
   width: 100%;
+  background-image: url("background_teams.jpeg");
+  background-size: cover;
   margin-top: 3vh;
   text-align: center;
   position: relative; /* Required for absolute positioning of child elements */
