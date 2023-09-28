@@ -23,6 +23,7 @@ html {
 h1{
     font-family: 'Aladin', cursive;
     font-size: 7rem;
+    margin-top: 2%;
     color: #feffb9;
     text-shadow: 2px 2px 4px rgb(237, 145, 255);
 }
@@ -41,6 +42,7 @@ p{
   color: #320c53;
   text-shadow: 2px 2px 4px rgb(255, 200, 0);
 }
+
 /* .hide-holo .holo {
   display: none;
 } */
@@ -49,14 +51,9 @@ p{
   background-size:cover; /* Adjust this property as needed
   height: 20vh; */
   width: 100%;
-  background-image: url("background_teams.jpeg");
-  background-size: cover;
-  margin-top: 3vh;
   text-align: center;
   position: relative; /* Required for absolute positioning of child elements */
   overflow: hidden;
- 
-  
 }
 .holo {
   position: absolute;
